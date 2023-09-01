@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;0,800;1,300;1,500;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+
+
+    <style>
+        
+
+        /* html *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        } */
+
+        body {
+
+            margin: 0;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-image: url("./LOGIN_EXPONENCIAL.jpg");
+        }
+
+
+
+
+        .container {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            
+        }
+
+        .form-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 18rem;
+            background-color: #00364fc6;
+            padding: 80px 40px;
+            border-radius: 12px;
+            background-blend-mode: multiply;
+        }
+
+
+
+        .flex {
+            display: flex;
+        }
+
+        .centerHorizontal {
+            justify-content: center;
+        }
+
+        .centerVertical {
+            align-items: center;
+        }
+
+        .center-center {
+            align-items: center;
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        .input {
+            background-color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            height: 32px;
+            font-size: .9rem;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 2rem;
+        }
+
+        @media screen and (max-width: 950px) {
+            .container{
+                flex-direction: column;
+                gap: 3rem;
+
+            }
+
+            .title {
+                font-size: 2.7rem !important;
+            }
+            .title-form{
+                font-size: 2.2rem !important;
+            }
+            .form-container{
+                
+                padding: 30px 39px;
+            }
+        }
+
+        @media screen and (max-width: 372px) {
+            .form-container{
+                width: 14rem;
+            }
+
+            .title{
+                font-size: 2.2rem !important;
+            }
+            
+            .container{
+                height: 100% !important;
+            }
+
+        }
+
+
+
+
+        .btn-ingresar {
+            background-color: #20b1e7;
+            border-radius: 50px;
+            border: none;
+            color: white;
+            width: 60%;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            height: 50px;
+            margin-top: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-ingresar:hover{
+            transform: translateY(-3px);
+            /* opacity: .9; */
+            background-color: #1c8cb5;
+        }
+
+        .title-form {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 2.7rem;
+            color: white;
+            text-align: center;
+            margin: 0px;
+        }
+
+
+
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 3.7rem;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            color: #00496c;
+        }
+
+        .logo-expo {
+            width: 50%;
+            padding: 0px;
+            margin: 0px 0px 10px 0px;
+        }
+
+        .txt-olvido-password {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .txt-olvido-password:hover{
+            color: rgb(185, 181, 181);
+        }
+
+        .icon-btn-ingresar {
+            width: 1.4rem;
+            margin-left: .5rem;
+            padding: 0px;
+        }
+
+        .linea-white {
+            background-color: white;
+
+        }
+
+        .linea {
+            height: 4px;
+            margin-top: 15px;
+            width: 22%;
+        }
+
+        .linea-sesion {
+            height: 4px;
+            margin-top: 15px;
+            width: 22%;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <section class="background-euro">
+        <div class="container">
+            <div class="flex flex-column">
+                <picture class="flex centerHorizontal">
+                    <img class="logo-expo" src="./logo-completo.png" alt="logo-euro">
+
+                </picture>
+                <div class="flex centerHorizontal ">
+                    <div class="flex flex-column">
+                        <p class="title">¡Bienvenidos!</p>
+
+                        <!-- <div class="linea linea-white"></div> -->
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="form-container">
+                <div class="flex flex-column center-center">
+                    <h2 class="title-form">Inicia sesión</h2>
+                    <div class="linea-sesion linea-white"></div>
+
+                </div>
+                <form action="/" class="form">
+                    <div class="flex centerHorizontal  flex-column">
+                        <label for="number"></label><input type="mail" id="mail" placeholder="Documento"
+                            class="input">
+
+                        <label for="password"></label><input type="password" id="password" placeholder="Contraseña"
+                            class="input">
+                    </div>
+
+                    <div class="flex centerHorizontal">
+                        <button class="btn-ingresar flex centerHorizontal centerVertical" type="button">
+                            <span>Ingresar</span>
+                            <!-- <input type="submit" value="Ingresar" class="primary-button login-button"> -->
+                            <span>
+                                <img class="icon-btn-ingresar" src="./icon_btn_ingresar.svg" alt="">
+                            </span>
+
+                        </button>
+                    </div>
+
+                    <div class="flex centerHorizontal">
+                        <a class="txt-olvido-password" href="">¿Olvidó su contraseña?</a>
+                        <!-- <p class="txt-olvido-password">¿Olvidó su contraseña?</p> -->
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
+
+
+
+
+
+
+
